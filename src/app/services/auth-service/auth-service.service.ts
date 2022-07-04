@@ -33,7 +33,8 @@ export class AuthServiceService {
     this.password = user.password;
      var httpOptions = {
       headers: new HttpHeaders({
-        'Authorization': 'Basic ' + btoa(this.username + ':' + this.password)
+        'Authorization': 'Basic ' + btoa(this.username + ':' + this.password),
+        
       })
     };
 

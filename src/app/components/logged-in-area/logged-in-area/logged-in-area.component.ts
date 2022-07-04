@@ -16,8 +16,5 @@ export class LoggedInAreaComponent implements OnInit {
     if(!this.auth.isLoggedIn) {
       this.router.navigate(['login']);
     }
-    
-    
   }
-
 }
